@@ -1,24 +1,9 @@
+
+
 <?php
-    class DBConnection{
-        private $connection;
-        private  $dbConnetion;
+    $db=mysqli_connect('localhost','root','mysql','register');
 
-        private function DBConnection(){
-            $connection = new mysqli_connect("localhost","root","mysql","thogakade");
+    if ($db->connect_error) { 
+		die("Connection failed: " . $db->connect_error); 
         }
-        public function getInstance(){
-            if($connection==NULL){
-                return new DBConnection();
-            }else{
-                return $dbConnetion;
-            }
-        }
-        public function getConnection(){
-            return $connection;
-        }
-
-
-    }
-    (new DBConnection())::getConnection()->getInstance();
-    
 ?>
