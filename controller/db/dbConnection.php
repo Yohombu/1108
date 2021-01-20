@@ -1,12 +1,9 @@
+
+
 <?php
-    class DBConnection{
-        private $connection;
-        private $dbConnetion = DBConnection;
+    $db=mysqli_connect('localhost','root','mysql','register');
 
-        private function DBConnection(){
-            $connection = mys
+    if ($db->connect_error) { 
+		die("Connection failed: " . $db->connect_error); 
         }
-
-    }
-    
 ?>
