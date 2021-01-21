@@ -1,7 +1,7 @@
 
 
 <?php
-    $db=mysqli_connect('localhost','root','mysql','register');
+    $db=mysqli_connect('localhost','root','','1108');
 
     if ($db->connect_error) { 
 		die("Connection failed: " . $db->connect_error); 
