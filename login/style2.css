@@ -4,7 +4,6 @@ body {
 }
 form {
 
-    background-image: url("imgg.jpg");
     margin-top: 35px;
     margin-left: 50px;
     margin-right: 50px;
@@ -38,7 +37,7 @@ button:hover {
 
 .cancelbtn {
     width: auto;
-    padding: 10px 18px;
+    padding: 16px 20px;
     background-color: #87857e;
 }
 
